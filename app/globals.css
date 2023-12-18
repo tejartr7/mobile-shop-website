@@ -2,3 +2,71 @@
 @tailwind components;
 @tailwind utilities;
 
+.bg-nav {
+    background-color: rgba(22, 4, 4, 0.89) !important;
+    height: 100px;
+}
+
+.focus-nav {
+    border: 2px solid red;
+}
+
+.main-pic {
+    border-radius: 50%;
+    display: block;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0px 1px 7px 3px #203e37;
+}
+
+.navbar-brand {
+    color: #64ffda;
+}
+
+.navbar-wrapper {
+    padding: 20px 40px;
+    color: #64ffda;
+}
+
+.link {
+    color: red;
+}
+
+.navlink {
+    text-decoration: none;
+    color: #64ffda;
+    margin: 0 10px;
+}
+
+.navlink:hover {
+    color: aqua;
+}
+
+/* Specific styles for active links */
+.link-active {
+    border-bottom: 2px solid #d7eee8;
+}
+
+.resume-link-nav {
+    background-color: transparent;
+    border: 2px solid #64ffda;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+}
+
+@media only screen and (max-width: 600px) {
+    .navlink {
+        padding-top: 10px;
+        margin-top: 10px;
+    }
+
+    .resume-nav-bar-wrapper {
+        margin-top: 10px;
+        padding-top: 10px;
+    }
+
+    .main-pic {
+        height: 50px;
+        width: 50px;
+    }
+}

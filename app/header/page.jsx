@@ -1,34 +1,62 @@
 'use client'
-import { usePathname } from "next/navigation";
+import Link from 'next/link';
+import { useState } from 'react';
 
-export default function Header() {
-    const router = usePathname();
+const Navbar = () => {
+    const [isNavOpen, setNavOpen] = useState(false);
 
-    const isNavLinkActive = (path) => router.pathname === path;
+    const toggleNav = () => {
+        setNavOpen(!isNavOpen);
+    };
 
     return (
-        <nav className="flex items-center justify-between flex-wrap bg-gray-800 p-6 fixed w-full z-10 top-0">
-            <div class="flex items-center flex-shrink-0 text-white mr-6">
-                <a class="text-white no-underline hover:text-white hover:no-underline" href="#">
-                    <span class="text-2xl pl-2"><i class="em em-grinning"></i>Logo</span>
-                </a>
-            </div>
-            <div className="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block pt-6 lg:pt-0" id="nav-content">
-                <ul className="list-reset lg:flex justify-end flex-1 items-center">
-                    <li className={`mr-3 ${isNavLinkActive('/') ? 'active' : ''}`}>
-                        <a className="inline-block py-2 px-4 text-white no-underline" href="/">About us</a>
-                    </li>
-                    <li className={`mr-3 ${isNavLinkActive('/brands') ? 'active' : ''}`}>
-                        <a className="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="/brands">Brands</a>
-                    </li>
-                    <li className={`mr-3 ${isNavLinkActive('/testimonials') ? 'active' : ''}`}>
-                        <a className="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="/testimonials">Testimonials</a>
-                    </li>
-                    <li className={`mr-3 ${isNavLinkActive('/contactus') ? 'active' : ''}`}>
-                        <a className="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="/contactus">Contact us!</a>
-                    </li>
-                </ul>
+        <nav className="bg-gray-800 p-4">
+            <div className="container mx-auto flex justify-between items-center">
+                <Link href="/" className="navbar-brand text-4xl">
+                    Home
+                </Link>
+                <button
+                    className="lg:hidden text-white focus:outline-none"
+                    onClick={toggleNav}
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-6 w-6"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                    >
+                        <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M4 6h16M4 12h16m-7 6h7"
+                        />
+                    </svg>
+                </button>
+                <div
+                    className={`${isNavOpen ? 'block' : 'hidden'
+                        } lg:flex items-center`}
+                >
+                    <Link href="/" className="link navlink">
+                        Home
+                    </Link>
+                    <Link href="/#about" className="link navlink">
+                        About
+                    </Link>
+                    <Link href="/#brands" className="link navlink">
+                        Menu
+                    </Link>
+                    <Link href="/#reviews" className="link navlink">
+                        Reviews
+                    </Link>
+                    <Link href="/#contact" className="link navlink">
+                        Contact
+                    </Link>
+                </div>
             </div>
         </nav>
     );
-}
+};
+
+export default Navbar;
