@@ -1,62 +1,49 @@
-'use client'
-import Link from 'next/link';
-import { useState } from 'react';
+'use client';
+import { Navbar, Container, Nav } from "react-bootstrap";
+import Link from "next/link";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { useState } from "react";
+import '../globals.css';
+import Image from "next/image";
+import logo from '../images/logo.png'
+const Header = () => {
+  const [currPath, setCurrPath] = useState('');
 
-const Navbar = () => {
-    const [isNavOpen, setNavOpen] = useState(false);
+  const isActive = (path) => currPath === path;
 
-    const toggleNav = () => {
-        setNavOpen(!isNavOpen);
-    };
+  const handleClick = (path) => {
+    setCurrPath(path);
+  };
 
-    return (
-        <nav className="bg-gray-800 p-4">
-            <div className="container mx-auto flex justify-between items-center">
-                <Link href="/" className="navbar-brand text-4xl">
-                    Home
-                </Link>
-                <button
-                    className="lg:hidden text-white focus:outline-none"
-                    onClick={toggleNav}
-                >
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-6 w-6"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                    >
-                        <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M4 6h16M4 12h16m-7 6h7"
-                        />
-                    </svg>
-                </button>
-                <div
-                    className={`${isNavOpen ? 'block' : 'hidden'
-                        } lg:flex items-center`}
-                >
-                    <Link href="/" className="link navlink">
-                        Home
-                    </Link>
-                    <Link href="/#about" className="link navlink">
-                        About
-                    </Link>
-                    <Link href="/#brands" className="link navlink">
-                        Menu
-                    </Link>
-                    <Link href="/#reviews" className="link navlink">
-                        Reviews
-                    </Link>
-                    <Link href="/#contact" className="link navlink">
-                        Contact
-                    </Link>
-                </div>
-            </div>
-        </nav>
-    );
+  return (
+    <Navbar collapseOnSelect expand="lg" className="navbar-wrapper" style={{ backgroundColor: '#333333', color: 'white' }}>
+      <Container>
+        <Navbar.Brand href="/" className="navbar-brand">
+          <Image src={logo} alt="logo" width={75} />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav id="navitems" className="ms-auto">
+            <Link href="/" className={isActive('/') ? 'link-active navlink' : 'link navlink'} onClick={() => handleClick('/')}>
+              Home
+            </Link>
+            <Link href="/#about" className={isActive('/#about') ? 'link-active navlink' : 'link navlink'} onClick={() => handleClick('/#about')}>
+              About
+            </Link>
+            <Link href="/#menu" className={isActive('/#menu') ? 'link-active navlink' : 'link navlink'} onClick={() => handleClick('/#menu')}>
+              Menu
+            </Link>
+            <Link href="/#reviews" className={isActive('/#reviews') ? 'link-active navlink' : 'link navlink'} onClick={() => handleClick('/#reviews')}>
+              Reviews
+            </Link>
+            <Link href="/#contact" className={isActive('/#contact') ? 'link-active navlink' : 'link navlink'} onClick={() => handleClick('/#contact')}>
+              Contact
+            </Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
 };
 
-export default Navbar;
+export default Header;

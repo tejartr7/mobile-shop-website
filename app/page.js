@@ -1,20 +1,18 @@
-import Image from 'next/image'
+
 import Header from './header/page'
 import Hero from './hero/page'
 import About from './about/page'
-import Services from './services/page'
 import Reviews from './reviews/page'
 import Contact from './contact/page'
-import Brands from './brands/page'
-
+import Menu from './menu/page'
+import './globals.css'
 export default function Home() {
   return (
     <div>
       <Header />
       <Hero />
       <About />
-      <Brands />
-      <Services />
+      <Menu />
       <Reviews />
       <Contact />
     </div>
