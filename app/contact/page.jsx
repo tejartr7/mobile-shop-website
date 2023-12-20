@@ -2,7 +2,7 @@ import { BiSolidPhoneCall } from "react-icons/bi";
 import { FaGlobe, FaInstagramSquare } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 import { SiZomato } from "react-icons/si";
-
+import { SiSwiggy } from "react-icons/si";
 export default function Contact() {
     return (
         <section id="contact">
@@ -30,6 +30,12 @@ export default function Contact() {
                         <a target="_blank" href="https://www.instagram.com/biharkaswaad/">
                             <span className="sr-only">Instagram</span>
                             <FaInstagramSquare size={40} />
+                        </a>
+                    </div>
+                    <div className="link-wrapper">
+                        <a target="_blank" href="https://www.swiggy.com/restaurants/swaad-bihar-ka-howrah-pannalal-basak-lane-kolkata-562665">
+                            <span className="sr-only">Swiggy</span>
+                            <SiSwiggy size={40} />
                         </a>
                     </div>
                 </div>
