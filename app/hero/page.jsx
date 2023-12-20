@@ -1,5 +1,6 @@
 // Hero.js
-'use client'
+'use client';
+
 import { useState, useEffect } from 'react';
 import SwiperCore, { Navigation, Pagination, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -40,7 +41,7 @@ const Hero = () => {
             <Swiper
                 onSwiper={(swiper) => setSwiper(swiper)}
                 spaceBetween={30}
-                navigation
+                navigation={{ prevEl: '.swiper-button-prev', nextEl: '.swiper-button-next' }} // Add this line for navigation
                 pagination={{ clickable: true }}
                 autoplay={{ delay: 3000 }}
             >
@@ -68,7 +69,7 @@ const Hero = () => {
                     </SwiperSlide>
                 ))}
             </Swiper>
-            
+        
             {/* Navigation arrows */}
             <div className="swiper-button-next" onClick={handleNext} style={{ color: 'white', backgroundColor: 'black' }}></div>
             <div className="swiper-button-prev" onClick={handlePrev} style={{ color: 'white', backgroundColor: 'black' }}></div>
