@@ -33,7 +33,7 @@ export default function Contact() {
                         </a>
                     </div>
                 </div>
-                <p className="mt-8 text-base leading-6 text-center text-2xl">
+                <p className="mt-8 text-center text-xl font-bold">
                     © Design and developed by <a target="_blank" href="https://twitter.com/raghu_rtr" style={{ color: '#ff8c00' }}>RTR</a>
                 </p>
             </div>

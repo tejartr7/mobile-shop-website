@@ -12,7 +12,7 @@ export default function About() {
                         <h2 className='text-3xl my-2' style={{ color: '#ff8c00' }}>Welcome To</h2>
                         <h1 className='text-5xl my-2' style={{ color: '#333333' }}>Swaad Bihar ka</h1>
                         <p className='text-xl font-bold' style={{ color: '#333333' }}>
-                            Swaad Bihar ka is a cloud kitchen and food delivery service in WestBengal. We specialize in delivering the best and most delicious food in Bihar at the most affordable prices. Our dedication to quality and taste sets us apart. Choose from our extensive range of food items to satisfy your cravings. Experience the convenience of ordering from us through Zomato and Swiggy, and let us bring the authentic flavors of the Bihar Food to your doorstep.
+                            Swaad Bihar ka is a cloud kitchen and food delivery service in Kolkata. We specialize in delivering the best and most delicious food in Bihar at the most affordable prices. Our dedication to quality and taste sets us apart. Choose from our extensive range of food items to satisfy your cravings. Experience the convenience of ordering from us through Zomato and Swiggy, and let us bring the authentic flavors of the Bihar Food to your doorstep.
                         </p>
                     </div>
                     <div className='md:col-span-2 lg:col-span-2 flex items-center justify-center my-8'>
