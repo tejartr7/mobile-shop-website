@@ -7,7 +7,9 @@ body {
     font-family: 'Merriweather', serif;
     background-color: #e6e6fa;
 }
-
+.hero{
+    z-index: 1;
+}
 .bg-nav {
     background-color: #333333 !important;
     height: 100px;
@@ -74,7 +76,12 @@ body {
     padding: 0.75rem 1rem;
     border-radius: 6px;
 }
-
+.swiper-button-next, .swiper-button-prev {
+    color: #ff8c00;
+    background-color: #333333;
+    width: 25px;
+    border-radius: 5px;
+}
 @media only screen and (max-width: 600px) {
     .navlink {
         padding-top: 10px;
