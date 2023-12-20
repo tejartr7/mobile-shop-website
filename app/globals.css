@@ -77,9 +77,9 @@ body {
     border-radius: 6px;
 }
 .swiper-button-next, .swiper-button-prev {
-    color: #ff8c00;
+    color: white;
     background-color: #333333;
-    width: 25px;
+    width: 40px;
     border-radius: 5px;
 }
 @media only screen and (max-width: 600px) {
