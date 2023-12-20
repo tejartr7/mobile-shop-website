@@ -8,26 +8,26 @@ export default function Contact() {
 
                 <div class="flex justify-center mt-8 space-x-6">
                     <div className="link-wrapper">
-                        <a href="tel:+917044206013">
+                        <a target="_blank" href="tel:+917044206013">
                             <span className="sr-only">Call</span>
                             <BiSolidPhoneCall size={25} />
                         </a>
                     </div>
                     <div className="link-wrapper">
-                        <a href="https://link.zomato.com/xqzv/rshare?id=442892287f0b9858">
-                            <span className="sr-only">Call</span>
+                        <a target="_blank" href="https://link.zomato.com/xqzv/rshare?id=442892287f0b9858">
+                            <span className="sr-only">Zomato</span>
                             <FaGlobe size={25} />
                         </a>
                     </div>
                     <div className="link-wrapper">
-                        <a href="mailto:swwaadbiharka@gmail.com">
-                            <span className="sr-only">Call</span>
+                        <a target="_blank" href="mailto:swwaadbiharka@gmail.com">
+                            <span className="sr-only">Mail</span>
                             <IoIosMail size={30} />
                         </a>
                     </div>
                     <div className="link-wrapper">
-                        <a href="#">
-                            <span className="sr-only">Call</span>
+                        <a target="_blank" href="https://www.instagram.com/biharkaswaad/">
+                            <span className="sr-only">Instagram</span>
                             < FaInstagramSquare size={25} />
                         </a>
                     </div>
