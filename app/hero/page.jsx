@@ -23,6 +23,18 @@ const Hero = () => {
         }
     }, [swiper]);
 
+    const handlePrev = () => {
+        if (swiper) {
+            swiper.slidePrev();
+        }
+    };
+
+    const handleNext = () => {
+        if (swiper) {
+            swiper.slideNext();
+        }
+    };
+
     return (
         <section id="hero">
             <Swiper
@@ -34,7 +46,7 @@ const Hero = () => {
             >
                 {images.map((image, index) => (
                     <SwiperSlide key={index}>
-                        <div className="relative w-full h-[75vh] sm:w-full,h-full" >
+                        <div className="relative w-full h-[75vh] sm:w-full,h-full">
                             <Image
                                 src={image}
                                 alt={`Slide ${index + 1}`}
@@ -44,7 +56,6 @@ const Hero = () => {
                             />
                             <div className="absolute inset-0 flex items-center justify-center text-white z-20 text-center">
                                 <div className="bg-gray-700 p-8 rounded-md" style={{ borderRadius: '15px' }}>
-
                                     <p className="text-4xl font-bold mb-6">
                                         Want to taste the best food in Bihar?
                                     </p>
@@ -57,6 +68,10 @@ const Hero = () => {
                     </SwiperSlide>
                 ))}
             </Swiper>
+            
+            {/* Navigation arrows */}
+            <div className="swiper-button-next" onClick={handleNext} style={{ color: 'white', backgroundColor: 'black' }}></div>
+            <div className="swiper-button-prev" onClick={handlePrev} style={{ color: 'white', backgroundColor: 'black' }}></div>
         </section>
     );
 };
