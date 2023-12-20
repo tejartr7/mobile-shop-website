@@ -9,12 +9,12 @@ import 'swiper/swiper-bundle.css'; // Import Swiper styles
 import Image from 'next/image';
 import hero_1 from '../images/hero_1.png';
 import hero_2 from '../images/hero_2.png';
-
+import hero_3 from '../images/hero_3.png';
 // Install Swiper modules
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 
 const Hero = () => {
-    const images = [hero_1, hero_2];
+    const images = [hero_1, hero_2,hero_3];
     const [swiper, setSwiper] = useState(null);
 
     useEffect(() => {
