@@ -10,7 +10,7 @@ export default function About() {
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4'>
                     <div className='col-span-2 lg:p-4 text-center text-xl' style={{color:'#333333'}}>
                         <h2 className='text-3xl my-2' style={{ color: '#ff8c00' }}>Welcome To</h2>
-                        <h1 className='text-5xl my-2' style={{ color: '#333333' }}>Bihar Ka Swaad</h1>
+                        <h1 className='text-5xl my-2' style={{ color: '#333333' }}>Swaad Bihar Ka</h1>
                         <p>
                            lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                         </p>
