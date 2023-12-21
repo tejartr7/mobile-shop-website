@@ -40,7 +40,7 @@ export default function Contact() {
                     </div>
                 </div>
                 <p className="mt-8 text-center text-xl font-bold">
-                    © Design and developed by <a target="_blank" href="https://twitter.com/raghu_rtr" style={{ color: '#ff8c00' }}>RTR</a>
+                    © Design and developed by <a target="_blank" href="https://twitter.com/raghu_rtr" style={{ color: '#27ae60' }}>RTR</a>
                 </p>
             </div>
         </section>

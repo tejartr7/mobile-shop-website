@@ -37,7 +37,7 @@ const ReviewSlider = () => {
 
     return (
         <section id="reviews" className="swiper-container">
-            <h2 className="text-5xl font-semibold mb-4 text-center" style={{ color: '#333333' }}>Customer Reviews</h2>
+            <h2 className="text-5xl font-semibold mb-4 text-center" style={{ color: '#192a56' }}>Customer Reviews</h2>
             <Swiper
                 slidesPerView={1}
                 navigation={{ prevEl: '.swiper-button-prev', nextEl: '.swiper-button-next' }} // Add this line for navigation
@@ -57,7 +57,7 @@ const ReviewSlider = () => {
             >
                 {reviewData.map((review) => (
                     <SwiperSlide key={review.id} style={{ height: '100%' }}>
-                        <div className="review-card bg-gray-600 text-white p-6 rounded-lg text-center flex flex-col items-center m-2" style={{ height: '100%' }}>
+                        <div className="review-card  text-white p-6 rounded-lg text-center flex flex-col items-center m-2" style={{ height: '100%',backgroundColor:'#192a56' }}>
                             <Image
                                 src={review.gender === 'm' ? profile :female}
                                 alt={review.name}
@@ -78,7 +78,7 @@ const ReviewSlider = () => {
 
                     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4'>
                         <div className='md:col-span-2 lg:col-span-2 flex flex-col items-center justify-center my-8'>
-                            <h2 className='text-center mb-4 text-3xl font-bold' style={{ color: '#333333' }} > <u>Siggy Rating</u></h2>
+                            <h2 className='text-center mb-4 text-3xl font-bold' style={{ color: '#192a56' }} > <u>Swiggy Rating</u></h2>
                             <Image
                                 src={rating_1}
                                 width={400}
@@ -87,11 +87,11 @@ const ReviewSlider = () => {
                                 layout="fixed"
                                 objectFit="cover"
                                 objectPosition="center center"
-                                className='about-image rounded-full mx-auto sm:h-400 md:w-500 md:h-500 lg:w-96 lg:h-96 xl:w-120 xl:h-120'
+                                className='review-image rounded-full mx-auto sm:h-400 md:w-500 md:h-500 lg:w-96 lg:h-96 xl:w-120 xl:h-120'
                             />
                         </div>
                         <div className='md:col-span-2 lg:col-span-2 flex flex-col items-center justify-center my-8'>
-                            <h2 className='text-center mb-4 text-3xl font-bold' style={{ color: '#333333' }} ><u>Zomato Rating</u></h2>
+                            <h2 className='text-center mb-4 text-3xl font-bold' style={{ color: '#192a56' }} ><u>Zomato Rating</u></h2>
                             <Image
                                 src={rating_1}
                                 width={400}
@@ -100,7 +100,7 @@ const ReviewSlider = () => {
                                 layout="fixed"
                                 objectFit="cover"
                                 objectPosition="center center"
-                                className='about-image rounded-full mx-auto sm:h-400 md:w-500 md:h-500 lg:w-96 lg:h-96 xl:w-120 xl:h-120'
+                                className='review-image rounded-full mx-auto sm:h-400 md:w-500 md:h-500 lg:w-96 lg:h-96 xl:w-120 xl:h-120'
                             />
                         </div>
                     </div>

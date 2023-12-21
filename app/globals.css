@@ -5,11 +5,13 @@
 
 body {
     font-family: 'Merriweather', serif;
-    background-color: #e6e6fa;
+    background-color: #ffffff;
 }
-.hero{
+
+.hero {
     z-index: 1;
 }
+
 .bg-nav {
     background-color: #333333 !important;
     height: 100px;
@@ -42,7 +44,7 @@ body {
 }
 
 .link-wrapper a:hover {
-    color: #ff8c00;
+    color: #27ae60;
 }
 
 
@@ -54,21 +56,26 @@ body {
 .link {
     color: red;
 }
-
+.review-image{
+    border: 10px solid #192a56;
+}
 .navlink {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     text-decoration: none;
-    color: white;
+    color: #666666;
     margin: 0 10px;
+    padding: 10px;
+    border-radius: 5px;
+    font: bold;
 }
 
 .navlink:hover {
-    color: #ff8c00;
+    color: #192a56;
 }
 
 /* Specific styles for active links */
 .link-active {
-    border-bottom: 5px solid #ff8c00;
+    background-color: #27ae60;
 }
 
 .resume-link-nav {
@@ -77,13 +84,16 @@ body {
     padding: 0.75rem 1rem;
     border-radius: 6px;
 }
-.swiper-button-next, .swiper-button-prev {
+
+.swiper-button-next,
+.swiper-button-prev {
     color: white;
     background-color: #333333;
     width: 40px;
     height: 40px;
     border-radius: 5px;
 }
+
 @media only screen and (max-width: 600px) {
     .navlink {
         padding-top: 10px;
