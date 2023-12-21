@@ -7,9 +7,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css'; // Import Swiper styles
 
 import Image from 'next/image';
-import hero_1 from '../images/img_5.jpg';
-import hero_2 from '../images/img_11.jpg';
-import hero_3 from '../images/tass.jpg';
+import hero_1 from '../images/img_5.JPG';
+import hero_2 from '../images/img_11.JPG';
+import hero_3 from '../images/tass.JPG';
 // Install Swiper modules
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 // Hero.js
