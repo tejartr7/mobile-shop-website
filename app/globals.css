@@ -98,7 +98,16 @@ body {
     height: 40px;
     border-radius: 5px;
 }
-
+@media screen and(max-width:640px) {
+    .hero{
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-slide-content{
+        margin: 0;
+        padding: 0;
+    }
+}
 @media only screen and (max-width: 600px) {
     .navlink {
         padding-top: 10px;

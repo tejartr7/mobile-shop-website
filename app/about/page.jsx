@@ -1,15 +1,15 @@
 import logo from '../images/logo.png';
 import Image from 'next/image';
-
 export default function About() {
     return (
-        <section id="about" className="flex flex-col sm:flex-row items-center justify-center">
-            <div className='gap-4 mx-4 lg:mx-40 mt-6 mb-4 lg:mb-8'>
+        <section id="about" className="flex flex-col sm:flex-row items-center justify-center" style={{backgroundColor:'#eeeeee'}}>
+
+            <div className='gap-4 mx-4 lg:mx-40 mt-6 mb-4 lg:mb-8 sm:m-0 sm:p-0' >
                 {/* Content of the About section goes here */}
+                <h1 className='text-center text-5xl font-bold lg:pt-5 sm:pt-1' style={{color:'#192a56'}}>About us</h1>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 sm:m-0 sm:p-0'>
 
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4'>
-
-                    <div className='md:col-span-2 lg:col-span-2 flex items-center justify-center my-8'>
+                    <div className='md:col-span-2 lg:col-span-2 flex items-center justify-center my-8 sm:my-4'>
                         <Image
                             src={logo}
                             width={600}
@@ -18,7 +18,7 @@ export default function About() {
                             layout="fixed"
                             objectFit="cover"
                             objectPosition="center center"
-                            className='about-image rounded-full mx-auto md:w-500 md:h-500 lg:w-96 lg:h-96 xl:w-120 xl:h-120'  // Add rounded styling if needed
+                            className='about-image rounded-full mx-auto md:w-500 md:h-500 lg:w-96 lg:h-96 xl:w-120 xl:h-120 sm:p-2'  // Add rounded styling if needed
                         />
 
                     </div>

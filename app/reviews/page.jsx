@@ -36,8 +36,8 @@ const ReviewSlider = () => {
     };
 
     return (
-        <section id="reviews" className="swiper-container">
-            <h2 className="text-5xl font-semibold mb-4 text-center" style={{ color: '#192a56' }}>Customer Reviews</h2>
+        <section id="reviews" className="swiper-container" style={{backgroundColor:'#eeeeee'}}>
+            <h1 className="text-5xl font-bold mb-4 text-center lg:pt-5 sm:pt-1" style={{ color: '#192a56' }}>Customer Reviews</h1>
             <Swiper
                 slidesPerView={1}
                 navigation={{ prevEl: '.swiper-button-prev', nextEl: '.swiper-button-next' }} // Add this line for navigation
