@@ -7,16 +7,16 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css'; // Import Swiper styles
 
 import Image from 'next/image';
-import hero_1 from '../images/img_5.jpg';
-import hero_2 from '../images/img_11.jpg';
-import hero_3 from '../images/tass.jpg';
+import ghar from '../images/ghar.jpg';
+import taas from '../images/taas.jpg';
+import litti from '../images/litti.jpg';
 // Install Swiper modules
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 // Hero.js
 // ... (import statements)
 
 const Hero = () => {
-    const images = [hero_1, hero_2, hero_3];
+    const images = [ghar,litti,taas];
     const names = ['Ghar ka chicken', 'Litti chokha', 'Taas Wala Chicken'];
     const texts = ["Ghar ka chicken is a typical Bihari style chicken curry loaded with lots of spices and purely homemade taste, It is also a famous dish in Bihar served in major restaurants or dhabas, It's taste will surely make you feel in love with it.", "Litti chokha, the name which is quite popular not only in Bihar but all India. It is found in almost every eatery in Bihar. We have also tried to maintain the authentic taste, litti is served with chokha [mixed brinjal, potato etc] and chutney [coriander].", "Chicken boneless pieces mixed with home-made spices, a very popular dish of Champaran district in Bihar, It is eaten as a snack item in Bihar."];
     const [swiper, setSwiper] = useState(null);
