@@ -5,6 +5,7 @@ import 'swiper/css/navigation';
 import Image from 'next/image';
 import reviewData from './reviews';
 import profile from '../images/profile.png';
+import female from '../images/female.jpg';
 import { useState, useEffect } from 'react';
 import SwiperCore, { Navigation, Pagination, Autoplay } from 'swiper';
 SwiperCore.use([Navigation, Pagination, Autoplay]);
@@ -57,7 +58,13 @@ const ReviewSlider = () => {
                 {reviewData.map((review) => (
                     <SwiperSlide key={review.id} style={{ height: '100%' }}>
                         <div className="review-card bg-gray-600 text-white p-6 rounded-lg text-center flex flex-col items-center m-2" style={{ height: '100%' }}>
-                            <Image src={profile} alt={review.name} width={50} height={50} className="mb-4" />
+                            <Image
+                                src={review.gender === 'm' ? profile :female}
+                                alt={review.name}
+                                width={50}
+                                height={50}
+                                className="mb-4"
+                            />
                             <h3 className="text-xl font-semibold mb-2">{review.name}</h3>
                             <p className="mb-2">Rating: {Number(review.rating) === 5 ? <StarComponent2 rating={review.rating} /> : <StarComponent1 rating={review.rating} />}</p>
                             <p>{review.comments}</p>
