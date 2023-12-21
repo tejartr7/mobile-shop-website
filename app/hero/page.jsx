@@ -56,13 +56,12 @@ const Hero = () => {
                                 quality={100}
                             />
                             <div className="absolute font-Merriweather inset-0 flex items-center justify-center text-white z-20 text-center">
-                                <div className="bg-gray-700 p-8 rounded-md" style={{ borderRadius: '15px' }}>
-                                    <p className="text-4xl font-bold mb-6 text-center">
+                                <div className="bg-gray-700 p-4 md:p-8 rounded-md" style={{ borderRadius: '15px' }}>
+                                    <p className="text-xl md:text-4xl font-bold mb-4 md:mb-6 text-center">
                                         Want to taste the best food in Bihar
-                                        <br></br> at most afforable price?
-
+                                        <br /> at the most affordable price?
                                     </p>
-                                    <a target='_blank' href="https://link.zomato.com/xqzv/rshare?id=442892287f0b9858" className="text-black bg-yellow-500 px-4 py-2 rounded-md text-lg font-semibold" style={{ backgroundColor: 'white' }}>
+                                    <a target='_blank' href="https://link.zomato.com/xqzv/rshare?id=442892287f0b9858" className="text-black bg-yellow-500 px-3 md:px-4 py-2 rounded-md text-base md:text-lg font-semibold" style={{ backgroundColor: 'white' }}>
                                         Order Now
                                     </a>
                                 </div>

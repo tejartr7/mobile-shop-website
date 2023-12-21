@@ -9,7 +9,7 @@ export default function Contact() {
             <div className="font-Merriweather max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
                 <div className="flex justify-center mt-8 space-x-6">
                     <div className="link-wrapper">
-                        <a target="_blank" href="tel:+917044206013">
+                        <a target="_blank" href="tel:+919331031828">
                             <span className="sr-only">Call</span>
                             <BiSolidPhoneCall size={40} />
                         </a>
