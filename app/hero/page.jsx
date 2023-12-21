@@ -7,9 +7,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css'; // Import Swiper styles
 
 import Image from 'next/image';
-import hero_1 from '../images/img_5.JPG';
-import hero_2 from '../images/img_11.JPG';
-import hero_3 from '../images/img_2.JPG';
+import hero_1 from '../images/img_5.jpg';
+import hero_2 from '../images/img_11.jpg';
+import hero_3 from '../images/tass.jpg';
 // Install Swiper modules
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 // Hero.js
@@ -82,11 +82,13 @@ const Hero = () => {
                             </div>
                         </SwiperSlide>
                     ))}
+                    <div className="swiper-button-next" onClick={handleNext} style={{ position: 'absolute', zIndex: 10, color: 'white', backgroundColor: 'black' }}></div>
+                    <div className="swiper-button-prev" onClick={handlePrev} style={{ position: 'absolute', zIndex: 10, color: 'white', backgroundColor: 'black' }}></div>
                 </Swiper>
 
                 {/* Navigation arrows */}
-                <div className="swiper-button-next" onClick={handleNext} style={{ color: 'white', backgroundColor: 'black' }}></div>
-                <div className="swiper-button-prev" onClick={handlePrev} style={{ color: 'white', backgroundColor: 'black' }}></div>
+
+
             </div>
         </section>
     );

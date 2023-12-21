@@ -12,6 +12,7 @@
     "@material-tailwind/react": "^2.1.7",
     "alpinejs": "^3.13.3",
     "bootstrap": "^5.3.2",
+    "builder.io": "^0.0.13",
     "flowbite-react": "^0.7.2",
     "next": "14.0.4",
     "react": "^18",

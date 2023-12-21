@@ -108,6 +108,7 @@ body {
         padding: 0;
     }
 }
+
 @media only screen and (max-width: 600px) {
     .navlink {
         padding-top: 10px;
