@@ -11,15 +11,13 @@ import SwiperCore, { Navigation, Pagination, Autoplay } from 'swiper';
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 import StarComponent1 from './Star';
 import StarComponent2 from './Star2';
-import logo from '../images/logo.png';
 import rating_1 from '../images/rating_1.jpeg';
 const ReviewSlider = () => {
     const [swiper, setSwiper] = useState(null);
 
     useEffect(() => {
         if (swiper) {
-            // Initialize Swiper when the component mounts
-            swiper.update();
+            swiper.update(); // Update Swiper when the component mounts
         }
     }, [swiper]);
 
@@ -36,11 +34,12 @@ const ReviewSlider = () => {
     };
 
     return (
-        <section id="reviews" className="swiper-container" style={{backgroundColor:'#eeeeee'}}>
+        <section id="reviews" className="swiper-container" style={{ backgroundColor: '#eeeeee' }}>
             <h1 className="text-5xl font-bold mb-4 text-center lg:pt-5 sm:pt-1" style={{ color: '#192a56' }}>Customer Reviews</h1>
             <Swiper
+                onSwiper={(swiper) => setSwiper(swiper)} // Set the Swiper instance to state
                 slidesPerView={1}
-                navigation={{ prevEl: '.swiper-button-prev', nextEl: '.swiper-button-next' }} // Add this line for navigation
+                navigation={{ prevEl: '.swiper-button-prev', nextEl: '.swiper-button-next' }}
                 pagination={{ clickable: true }}
                 spaceBetween={20}
                 breakpoints={{
@@ -57,9 +56,9 @@ const ReviewSlider = () => {
             >
                 {reviewData.map((review) => (
                     <SwiperSlide key={review.id} style={{ height: '100%' }}>
-                        <div className="review-card  text-white p-6 rounded-lg text-center flex flex-col items-center m-2" style={{ height: '100%',backgroundColor:'#192a56' }}>
+                        <div className="review-card  text-white p-6 rounded-lg text-center flex flex-col items-center m-2" style={{ height: '100%', backgroundColor: '#192a56' }}>
                             <Image
-                                src={review.gender === 'm' ? profile :female}
+                                src={review.gender === 'm' ? profile : female}
                                 alt={review.name}
                                 width={50}
                                 height={50}
@@ -71,6 +70,8 @@ const ReviewSlider = () => {
                         </div>
                     </SwiperSlide>
                 ))}
+                <div className="swiper-button-next" onClick={handleNext} style={{ position: 'absolute', zIndex: 10, color: 'black', backgroundColor: '#cccccc' }}></div>
+                <div className="swiper-button-prev" onClick={handlePrev} style={{ position: 'absolute', zIndex: 10, color: 'black', backgroundColor: '#cccccc' }}></div>
             </Swiper>
             <div>
                 <div className='font-Merriweather gap-4 mx-4 lg:mx-40 mt-6 mb-4 lg:mb-8'>

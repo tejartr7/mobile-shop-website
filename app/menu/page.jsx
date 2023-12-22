@@ -6,7 +6,7 @@ export default function Menu() {
     return (
         <section id="menu">
             <div>
-                <h1 className="text-5xl font-bold text-center lg:pt-5 sm:pt-1" style={{ color: '#192a56' }}>
+                <h1 className="text-5xl  font-Merriweather font-bold text-center lg:pt-5 sm:pt-2" style={{ color: '#192a56' }}>
                     Menu
                 </h1>
                 <div className="container my-12 mx-auto px-4 md:px-12 flex justify-center">

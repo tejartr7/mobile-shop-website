@@ -41,7 +41,7 @@ const Hero = () => {
 
     return (
         <section id="hero">
-            <div className='hero lg:mx-10 lg:px-10 sm:m-0 sm:p-0'>
+            <div className='hero font-Merriweather lg:mx-10 lg:px-10 sm:m-0 sm:p-0'>
                 <Swiper
                     onSwiper={(swiper) => setSwiper(swiper)}
                     spaceBetween={30}
@@ -60,22 +60,22 @@ const Hero = () => {
                                         <div className='col-span-2 lg:p-4 text-left text-xl flex flex-col items-start justify-center' style={{ color: '#333333' }}>
                                             <h2 className='text-3xl my-2 text-left' style={{ color: '#27ae60' }}>Explore Authentic Bihari Cuisine Right at Your Doorstep</h2>
                                             <h1 className='text-5xl my-2 font-bold text-left' style={{ color: '#192a56' }}>{names[index]}</h1>
-                                            <p className='text-xl font-bold' style={{ color: '#333333' }}>
+                                            <p className='text-xl' style={{ color: '#333333' }}>
                                                 {texts[index]}
                                             </p>
                                             <a href='https://link.zomato.com/xqzv/rshare?id=442892287f0b9858' className='order' style={{ backgroundColor: "#192a56", color: '#ffffff' }}>Order Now</a>
                                         </div>
                                         <div className='md:col-span-2 lg:col-span-2 flex items-center justify-center my-8 mr-0'>
-                                            <Image
-                                                src={image}
-                                                width={500}
-                                                height={500}
-                                                alt={`Slide ${index + 1}`}
-                                                layout="fixed"
-                                                objectFit="cover"
-                                                objectPosition="center center"
-                                                className='about-image rounded-full mx-auto md:w-500 md:h-500 lg:w-96 lg:h-96 xl:w-120 xl:h-120 sm:p-4 sm:h-140'  // Adjusted padding and margin
-                                            />
+                                        <Image
+                                        src={image}
+                                        width={500}
+                                        height={500}
+                                        alt={`Slide ${index + 1}`}
+                                        layout="responsive" 
+                                        objectFit="cover"
+                                        objectPosition="center center"
+                                        className='about-image rounded-full mx-auto md:w-500 md:h-500 lg:w-96 lg:h-96 xl:w-120 xl:h-120 sm:p-4 sm:h-140'
+                                    />                                    
                                         </div>
                                     </div>
                                 </div>
