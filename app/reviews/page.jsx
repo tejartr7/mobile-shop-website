@@ -12,6 +12,7 @@ SwiperCore.use([Navigation, Pagination, Autoplay]);
 import StarComponent1 from './Star';
 import StarComponent2 from './Star2';
 import rating_1 from '../images/rating_1.jpeg';
+import swiggy from '../images/swiggy.png';
 const ReviewSlider = () => {
     const [swiper, setSwiper] = useState(null);
 
@@ -75,13 +76,13 @@ const ReviewSlider = () => {
             </Swiper>
             <div>
                 <div className='font-Merriweather gap-4 mx-4 lg:mx-40 mt-6 mb-4 lg:mb-8'>
-                    {/* Content of the About section goes here */}
+                   
 
                     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4'>
                         <div className='md:col-span-2 lg:col-span-2 flex flex-col items-center justify-center my-8'>
                             <h2 className='text-center mb-4 text-3xl font-bold' style={{ color: '#192a56' }} > <u>Swiggy Rating</u></h2>
                             <Image
-                                src={rating_1}
+                                src={swiggy}
                                 width={400}
                                 height={500}
                                 alt="About Image"
