@@ -41,7 +41,7 @@ const Hero = () => {
 
     return (
         <section id="hero">
-            <div className='hero font-Merriweather lg:mx-10 lg:px-10 sm:m-0 sm:p-0'>
+            <div className='hero font-Poppins lg:mx-10 lg:px-10 sm:m-0 sm:p-0'>
                 <Swiper
                     onSwiper={(swiper) => setSwiper(swiper)}
                     spaceBetween={30}
@@ -59,8 +59,8 @@ const Hero = () => {
                                     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4'>
                                         <div className='col-span-2 lg:p-4 text-left text-xl flex flex-col items-start justify-center' style={{ color: '#333333' }}>
                                             <h2 className='text-3xl my-2 text-left' style={{ color: '#27ae60' }}>Explore Authentic Bihari Cuisine Right at Your Doorstep</h2>
-                                            <h1 className='text-5xl my-2 font-bold text-left' style={{ color: '#192a56' }}>{names[index]}</h1>
-                                            <p className='text-xl' style={{ color: '#333333' }}>
+                                            <h1 className='text-5xl my-2 font-bold text-left font-Poppins' style={{ color: '#192a56' }}>{names[index]}</h1>
+                                            <p className='text-2xl' style={{ color: '#333333' }}>
                                                 {texts[index]}
                                             </p>
                                             <a href='https://link.zomato.com/xqzv/rshare?id=442892287f0b9858' className='order' style={{ backgroundColor: "#192a56", color: '#ffffff' }}>Order Now</a>

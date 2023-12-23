@@ -35,7 +35,7 @@ const ReviewSlider = () => {
     };
 
     return (
-        <section id="reviews" className="swiper-container" style={{ backgroundColor: '#eeeeee' }}>
+        <section id="reviews" className="swiper-container font-Poppins" style={{ backgroundColor: '#eeeeee' }}>
             <h1 className="text-5xl font-bold mb-4 text-center lg:pt-5 sm:pt-1" style={{ color: '#192a56' }}>Customer Reviews</h1>
             <Swiper
                 onSwiper={(swiper) => setSwiper(swiper)} // Set the Swiper instance to state
@@ -56,8 +56,8 @@ const ReviewSlider = () => {
                 }}
             >
                 {reviewData.map((review) => (
-                    <SwiperSlide key={review.id} style={{ height: '100%' }}>
-                        <div className="review-card  text-white p-6 rounded-lg text-center flex flex-col items-center m-2" style={{ height: '100%', backgroundColor: '#192a56' }}>
+                    <SwiperSlide key={review.id}>
+                        <div className="review-card  text-white p-6 rounded-lg text-center flex flex-col items-center m-2" style={{ backgroundColor: '#192a56' }}>
                             <Image
                                 src={review.gender === 'm' ? profile : female}
                                 alt={review.name}
@@ -67,7 +67,7 @@ const ReviewSlider = () => {
                             />
                             <h3 className="text-xl font-semibold mb-2">{review.name}</h3>
                             <p className="mb-2">Rating: {Number(review.rating) === 5 ? <StarComponent2 rating={review.rating} /> : <StarComponent1 rating={review.rating} />}</p>
-                            <p>{review.comments}</p>
+                            <p className='text-xl'>{review.comments}</p>
                         </div>
                     </SwiperSlide>
                 ))}
@@ -76,7 +76,7 @@ const ReviewSlider = () => {
             </Swiper>
             <div>
                 <div className='font-Merriweather gap-4 mx-4 lg:mx-40 mt-6 mb-4 lg:mb-8'>
-                   
+
 
                     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4'>
                         <div className='md:col-span-2 lg:col-span-2 flex flex-col items-center justify-center my-8'>

@@ -10,6 +10,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'Merriweather': ['Merriweather', 'serif'],
+        'Poppins': ['Poppins'],
       },
     },
   },

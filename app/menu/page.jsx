@@ -4,7 +4,7 @@ import logo from '../images/logo.png';
 
 export default function Menu() {
     return (
-        <section id="menu">
+        <section id="menu" className='font-Poppins'>
             <div>
                 <h1 className="text-5xl  font-Merriweather font-bold text-center lg:pt-5 sm:pt-2" style={{ color: '#192a56' }}>
                     Menu
@@ -17,8 +17,8 @@ export default function Menu() {
                                     {/* Adjusted the height in the style prop */}
                                     <Image className="block h-auto w-full" src={item.image} width={300} height={200} alt='image' />
                                     <header className="flex items-center justify-between leading-tight p-2 md:p-4">
-                                        <h1 className="text-lg">
-                                            <p className="no-underline hover:underline text-black">
+                                        <h1 className="text-lg text-center">
+                                            <p className="no-underline hover:underline text-black text-center text-xl">
                                                 {item.title}
                                             </p>
                                         </h1>
