@@ -83,13 +83,13 @@ const ReviewSlider = () => {
                             <h2 className='text-center mb-4 text-3xl font-bold' style={{ color: '#192a56' }} > <u>Swiggy Rating</u></h2>
                             <Image
                                 src={swiggy}
-                                width={400}
-                                height={500}
+                                width={600}
+                                height={600}
                                 alt="About Image"
                                 layout="fixed"
                                 objectFit="cover"
                                 objectPosition="center center"
-                                className='review-image rounded-full mx-auto sm:h-400 md:w-500 md:h-500 lg:w-96 lg:h-96 xl:w-120 xl:h-120'
+                                className='review-image  mx-auto sm:h-400 md:w-500 md:h-500 lg:w-96 lg:h-96 xl:w-120 xl:h-120'
                             />
                         </div>
                         <div className='md:col-span-2 lg:col-span-2 flex flex-col items-center justify-center my-8'>
