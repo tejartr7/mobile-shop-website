@@ -66,7 +66,7 @@ const ReviewSlider = () => {
                                 className="mb-4"
                             />
                             <h3 className="text-xl font-semibold mb-2">{review.name}</h3>
-                            <p className="mb-2">Rating: {Number(review.rating) === 5 ? <StarComponent2 rating={review.rating} /> : <StarComponent1 rating={review.rating} />}</p>
+                            <p className="mb-2" style={{color:'#27ae60'}}>Rating: {Number(review.rating) === 5 ? <StarComponent2 rating={review.rating} /> : <StarComponent1 rating={review.rating} />}</p>
                             <p className='text-xl'>{review.comments}</p>
                         </div>
                     </SwiperSlide>
